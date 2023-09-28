@@ -5,6 +5,7 @@
 # load packages into environment
 library(janitor)
 library(dplyr)
+library(magrittr)
 
 # I'm checking to see what my current working directory is
 getwd()

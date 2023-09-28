@@ -1,6 +1,6 @@
 # Rhiannon Miller
 # September 27, 2023
-# Week 5 - Class 1 Key
+# Week 5 - Class 2 Key
 
 # loading packages
 library(dplyr)
@@ -34,11 +34,11 @@ gss.newvars <- gss.pk %>%
   mutate(pk.dnt.sfr = if_else(fepresch == 4, 1,0)) %>% 
   filter(fepresch > 0) %>% 
   mutate(madeg = case_when(momed < 0 ~ NA,
-                          momed > -1 & momed < 12 ~ 0,
-                          momed == 12 ~ 1,
-                          momed > 12 & momed < 16 ~ 2,
-                          momed == 16 ~ 3,
-                          momed > 16 ~ 4))
+                           momed > -1 & momed < 12 ~ 0,
+                           momed == 12 ~ 1,
+                           momed > 12 & momed < 16 ~ 2,
+                           momed == 16 ~ 3,
+                           momed > 16 ~ 4))
 
 # check new variables
 tabyl(gss.newvars,fepresch,pk.dnt.sfr)

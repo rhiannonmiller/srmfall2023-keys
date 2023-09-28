@@ -6,6 +6,7 @@
 library(dplyr)
 library(tidyverse)
 library(janitor)
+library(magrittr)
 
 # setting working directory
 setwd("C:/Users/rhian/My Drive/Fall 2023/soc209/data")
