@@ -1,6 +1,6 @@
 # Rhiannon Miller
-# September 19, 2023
-# w4c2 key
+# September 23, 2023
+# Week 4 - Class 2 key
 
 # load packages into environment
 library(janitor)

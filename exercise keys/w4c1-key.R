@@ -1,6 +1,6 @@
 # Rhiannon Miller
 # September 18, 2023
-# Coding Hygiene Demonstration
+# Week 4 - Class 1 Key
 
 # loading packages
 library(dplyr)
