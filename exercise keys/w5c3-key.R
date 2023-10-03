@@ -37,7 +37,7 @@ gss.graph <- gss.graph %>%
          vote4wmn = case_when(fepres < 0 ~ NA,
                               fepres == 1 ~ "yes",
                               fepres == 2 ~ "no"),
-         v2 = fct(vote4wmn, levels = c("yes","no")))
+         vote4wmn = fct(vote4wmn, levels = c("yes","no")))
 
 # Note: in the codebook fepres has a possible value of 5, but no observations
 #       are present in this dataset with that value, so they are not included
@@ -47,7 +47,6 @@ gss.graph <- gss.graph %>%
 
 tabyl(gss.graph,hrs1,hrs.wk)
 tabyl(gss.graph,fepres,vote4wmn)
-tabyl(gss.graph,fepres,v2)
 
 # create hrs.wk graph
 # variable is continuous, so use a histogram
