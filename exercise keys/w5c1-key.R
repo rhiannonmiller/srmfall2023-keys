@@ -45,13 +45,13 @@ tabyl(gss.newvars,fepresch,pk.dnt.sfr)
 tabyl(gss.newvars, momed, madeg)
 
 # crosstab of mother's education and preschool kids suffer when mom works
-tabyl(gss.newvars,momed,pk.dnt.sfr) %>% 
+tabyl(gss.newvars %>%  remove_missing(na.rm = TRUE),madeg,pk.dnt.sfr) %>% 
   adorn_totals(c("col","row")) %>% 
   adorn_percentages() %>% 
   adorn_pct_formatting(digits = 1) 
 
-# The percentage of respondents who strongly diagree that kids suffer 
-# when their mom works is higher among as the respondent's level of
+# The percentage of respondents who strongly disagree that kids suffer 
+# when their mom works is higher as the respondent's level of
 # educational attainment increases.
 
 
